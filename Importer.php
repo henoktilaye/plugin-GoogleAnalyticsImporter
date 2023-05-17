@@ -172,7 +172,7 @@ class Importer
             if (!method_exists(SettingsServer::class, 'isMatomoForWordPress') || !SettingsServer::isMatomoForWordPress()) {
                 $siteOptions = [
                     'siteName' => $webproperty->getName(),
-                    'urls' => [$webproperty->getWebsiteUrl()],
+                    'urls' => [str_replace('moodle.commoodle.com', $webproperty->getWebsiteUrl())],
                     'ecommerce' => $view->eCommerceTracking ? 1 : 0,
                     'siteSearch' => (int) !empty($view->siteSearchQueryParameters),
                     'searchKeywordParameters' => $view->siteSearchQueryParameters,
