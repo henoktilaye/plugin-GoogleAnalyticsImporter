@@ -1,6 +1,24 @@
 
 ## Changelog
 
+# 4.6.9
+- Updated dependencies (Guzzle)
+- Added GA import tab in no data screen
+
+# 4.6.8
+- Added OAuth complete warning when configuring/authorizing GA OAuth.
+
+# 4.6.7
+- Added additional check for redirect URL
+
+# 4.6.6
+- Started using ga:adwordsCampaignID dimension instead of ga:campaignCode to import data
+
+# 4.6.5
+- Fixed SiteContentDetector usage for lower Matomo versions
+- Added mapping for YaBrowser
+- Added mappings for search engine
+
 # 4.6.4
 - Changes to support Matomo Oauth disable on cloud
 
